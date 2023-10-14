@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "color_util.h": "c",
+        "libgd_hagl_hal.h": "c",
+        "hagl.h": "c",
+        "stdio.h": "c"
+    }
+}

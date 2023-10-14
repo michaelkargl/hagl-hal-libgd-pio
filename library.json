@@ -1,0 +1,19 @@
+{
+   "name": "hagl-hal",
+   "version": "0.5.0",
+   "platforms": "native",
+   "build": {
+      "srcDir": ".",
+      "includeDir": ".",
+      "srcFilter": "+<./src/*.c> +<./libgd-submodule/src/*.c>",
+      "flags": [
+        "-lgd",
+        "-lz",
+        "-lm",
+        "-DHAVE_STDINT_H",
+        "-DHAVE_UNISTD_H",
+        "-I ./include",
+        "-I ./libgd-submodule/src"
+      ]
+   }
+}

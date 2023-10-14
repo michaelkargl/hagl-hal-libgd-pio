@@ -1,0 +1,12 @@
+[submodule "example/draw-sample/lib/pio-hagl"]
+	path = example/draw-sample/lib/pio-hagl
+	url = https://gitlab.com/ohsnaparts/osasoftworks/hagl/pio-hagl.git
+[submodule "libgd-submodule"]
+	path = libgd-submodule
+	url = https://github.com/libgd/libgd.git
+[submodule "examples/drawing-sample/lib/pio-hagl-hal-libgd-submodule"]
+	path = examples/drawing-sample/lib/pio-hagl-hal-libgd-submodule
+	url = git@gitlab.com:ohsnaparts/osasoftworks/hagl/pio-hagl-hal-libgd.git
+[submodule "examples/drawing-sample/lib/pio-hagl-submodule"]
+	path = examples/drawing-sample/lib/pio-hagl-submodule
+	url = git@gitlab.com:ohsnaparts/osasoftworks/hagl/pio-hagl.git
