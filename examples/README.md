@@ -1,18 +1,10 @@
-# Drawing Sample
+# Samples
 
-To run this sample, you will have to have PlatformIO installed and configured.
+To run these samples, you will have to have platformIO fully functional
 
-```pwsh
-cd drawing-sample
-platformio run --target upload --environment native -vvv
-```
+1. **[Drawing Sample][drawing-sample]**
+    > Refer to [./drawing-sample/][drawing-sample] for instructions
 
-A file called [hagl.bmp] is overwritten on every run.\
-This path can be overridden via build flags in [platformio.ini].\
-\
-**Have fun!**
+   ![](./drawing-sample.gif)
 
-![](./drawing-sample.gif)
-
-[platformio.ini]: ./drawing-sample/platformio.ini
-[hagl.bmp]: ./drawing-sample/hagl.bmp
+[drawing-sample]: ./drawing-sample/
