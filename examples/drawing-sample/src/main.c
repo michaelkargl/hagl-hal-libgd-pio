@@ -23,8 +23,12 @@
 #define RANDOM_X RANDOM(0, DISPLAY_WIDTH)
 #define RANDOM_Y RANDOM(0, DISPLAY_HEIGHT)
 #define RANDOM_SIZE RANDOM(1, MIN_DISPLAY_SIZE)
-#define RANDOM_FONT_SCALE (RANDOM(100, 1000) / 100.0)
+#define RANDOM_FONT_SCALE (RANDOM(100, MAX_DISPLAY_SIZE) / 100.0)
 #define RANDOM_BORDER_RADIUS RANDOM(10, 30)
+
+#define FILLED_COUNT RANDOM(1, 2)
+#define HOLLOW_COUNT RANDOM(1, 3)
+#define CHARACTER_COUNT RANDOM(20, MIN_DISPLAY_SIZE/100)
 
 
 static bitmap_t font_glyph;
@@ -95,12 +99,9 @@ static void draw_hollow_elements(const uint32_t count)
 int main()
 {
     initialize();
-    const int filled_count = RANDOM(1, MIN_DISPLAY_SIZE/100);
-    draw_filled_elements(filled_count);
-    const int hollow_count = RANDOM(1, MIN_DISPLAY_SIZE/80);
-    draw_hollow_elements(hollow_count);
-    const int char_count = RANDOM(1, MIN_DISPLAY_SIZE/5);
-    draw_characters(char_count);
+    draw_filled_elements(FILLED_COUNT);
+    draw_hollow_elements(HOLLOW_COUNT);
+    draw_characters(CHARACTER_COUNT);
 
     hagl_close();
     return 0;
