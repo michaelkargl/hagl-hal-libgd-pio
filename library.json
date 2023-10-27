@@ -7,8 +7,6 @@
       "includeDir": ".",
       "srcFilter": "+<./src/*.c> +<./libgd-submodule/src/*.c>",
       "flags": [
-        "-lgd",
-        "-lz",
         "-lm",
         "-DHAVE_STDINT_H",
         "-DHAVE_UNISTD_H",
