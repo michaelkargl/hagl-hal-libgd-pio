@@ -19,7 +19,7 @@
 #define RANDOM(min, max) (min + (RANDOM_INT32 % (max - min)))
 #define RANDOM_WCHAR ((wchar_t)(sizeof(wchar_t)))
 #define RANDOM_CHAR ((char)RANDOM_INT32)
-#define RANDOM_COLOR RANDOM(0, 0xFFFFFF)
+#define RANDOM_COLOR hagl_color(RANDOM(0x00, 0x77), RANDOM(0x00, 0x55), RANDOM(0x00, 0x77))
 #define RANDOM_X RANDOM(0, DISPLAY_WIDTH)
 #define RANDOM_Y RANDOM(0, DISPLAY_HEIGHT)
 #define RANDOM_SIZE RANDOM(1, MIN_DISPLAY_SIZE)
@@ -37,7 +37,7 @@ static void initialize() {
 
     // seed rand with current time
     srand((unsigned int)time(NULL));
-
+    
     font_glyph.buffer = (uint8_t *)malloc(FONT_CHAR_WIDTH * FONT_CHAR_HEIGHT * sizeof(color_t));
     hagl_init();
 }
